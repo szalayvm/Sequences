@@ -128,7 +128,7 @@ def count_negatives(seq):
 def run_test_count_short_ones():
     """ Tests the   count_short_ones   function. """
     # ------------------------------------------------------------------
-    # TODO: 4. Implement this TEST function.
+    # Done: 4. Implement this TEST function.
     #   It TESTS the  count_short_ones  function defined below.
     #   Include at least ** 2 ** ADDITIONAL tests beyond those we wrote.
     #
@@ -241,7 +241,7 @@ def count_short_ones(seq_of_lists):
       :type seq_of_lists: list or tuple (whose items are sequences too)
     """
     # ------------------------------------------------------------------
-    # TODO: 5. Implement and test this function.
+    # Done: 5. Implement and test this function.
     #   Note that you should write its TEST function first (above).
     # ------------------------------------------------------------------
     total = 0
@@ -326,9 +326,14 @@ def draw_circles(window, points, radius, color):
       :type color: str
     """
     # ------------------------------------------------------------------
-    # TODO: 6. Implement and test this function.
+    # Done: 6. Implement and test this function.
     #          Tests have been written for you (above).
     # ------------------------------------------------------------------
+    for k in range(len(points)):
+        c = rg.Circle(points[k],radius)
+        c.fill_color = color
+        c.attach_to(window)
+        window.render()
 
 # ----------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
